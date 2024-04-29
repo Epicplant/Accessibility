@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#02645B</color>
+    <color name="black">#000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color1">#0078FF</color>
+    <color name="color2">#69A2BF</color>
+    <color name="color3">#2FA795</color>
+    <color name="color4">#35AC66</color>
+    <color name="iconTint">#8F8F8F</color>
+    <color name="settings">#999999</color>
+    <color name="settings_buttons">#575757</color>
+    <color name="hints">#D3D3D3</color>
+    <color name="base_color">#000</color>
+    <color name="link">#0000EE</color>
+</resources>

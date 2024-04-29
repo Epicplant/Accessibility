@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Make the necessary accessibility changes-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:orientation="horizontal"
+    android:theme="@style/AppTheme"
+    tools:context=".ChooseRequestsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/allHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chooseRequestsTitle"
+                style="@style/title"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/choose_requests_header"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/title_font"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/request1"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:height="48dp"
+                android:background="@color/color1"
+                android:contentDescription="Request 1"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/request2"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color2"
+                android:contentDescription="Request 2"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/request3"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color3"
+                android:contentDescription="Request 3"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <TextView
+                android:id="@+id/request4"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color4"
+                android:contentDescription="Request 4"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <include layout="@layout/navbar" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

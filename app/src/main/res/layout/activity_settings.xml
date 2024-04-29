@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Make the necessary accessibility changes-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    android:theme="@style/AppTheme"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingTitle"
+        style="@style/title"
+        android:layout_marginBottom="@dimen/margin_size"
+        android:minHeight="@dimen/button_size"
+        android:text="@string/settings"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/title_font" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/allHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/changeButtons"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/set_requests"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/editContacts"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/set_contacts_and_groups"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/resetTutorial"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/restart_tutorial"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/locationOnOff"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:checked="false"
+                android:lineHeight="48dp"
+                android:minWidth="48dp"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/location_off_on"
+                android:textColor="@color/base_color"
+                android:textOff="@string/location_off"
+                android:textOn="@string/location_on"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/toAboutPage"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/about"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/resetAppChoice"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:backgroundTint="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/reset_default_app_choice"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="@dimen/icon"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:adjustViewBounds="true"
+                android:gravity="center"
+                android:src="@drawable/home"
+                app:tint="@color/iconTint"
+                android:contentDescription="Home"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

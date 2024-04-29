@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Make the necessary accessibility changes-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:orientation="horizontal"
+    android:theme="@style/AppTheme"
+    tools:context=".ChangeRequestsActivity">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/allHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/changeRequestsTitle"
+                style="@style/title"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/set_requests_header"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/title_font" />
+
+            <LinearLayout
+                android:id="@+id/requestHolder1"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color1"
+                android:screenReaderFocusable="true"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/request1"
+                    style="@style/changetext"
+                    android:background="@color/color1"
+                    android:labelFor="@id/deleteRequest1"
+                    android:minHeight="@dimen/button_size"
+                    android:screenReaderFocusable="false"
+                    android:text="@string/blank_request"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteRequest1"
+                    style="@style/delete"
+                    android:contentDescription="Delete Request 1"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/requestHolder2"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color2"
+                android:screenReaderFocusable="true"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/request2"
+                    style="@style/changetext"
+                    android:background="@color/color2"
+                    android:labelFor="@id/deleteRequest2"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_request"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteRequest2"
+                    style="@style/delete"
+                    android:contentDescription="Delete Request 2"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/requestHolder3"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color3"
+                android:screenReaderFocusable="true">
+
+                <TextView
+                    android:id="@+id/request3"
+                    style="@style/changetext"
+                    android:background="@color/color3"
+                    android:labelFor="@id/deleteRequest3"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_request"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteRequest3"
+                    style="@style/delete"
+                    android:contentDescription="Delete Request 3"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/requestHolder4"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color4"
+                android:screenReaderFocusable="true">
+
+                <TextView
+                    android:id="@+id/request4"
+                    style="@style/changetext"
+                    android:background="@color/color4"
+                    android:labelFor="@id/deleteRequest4"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_request"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteRequest4"
+                    style="@style/delete"
+                    android:contentDescription="Delete Request 4"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/setNewRequest"
+                style="@style/button"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:hint="@string/enter_new_request"
+                android:imeActionLabel="@string/keyboard_save"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:minWidth="48dp"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textColorHint="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/saveNewRequest"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/save_new_request"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <include layout="@layout/navbar" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Make the necessary accessibility changes-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:orientation="horizontal"
+    android:theme="@style/AppTheme"
+    tools:context=".ChangeContactGroupsActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/allHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:screenReaderFocusable="true">
+
+            <TextView
+                android:id="@+id/changeContactsTitle"
+                style="@style/title"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:text="@string/set_contacts_header"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/title_font" />
+
+            <LinearLayout
+                android:id="@+id/contactHolder1"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color1"
+                android:importantForAccessibility="yes">
+
+                <TextView
+                    android:id="@+id/contactGroup1"
+                    style="@style/changetext"
+                    android:background="@color/color1"
+                    android:contentDescription="Contacts for Group 1"
+                    android:importantForAccessibility="yes"
+                    android:labelFor="@id/deleteContact1"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_contact_group"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteContact1"
+                    style="@style/delete"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactHolder2"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color2"
+                android:screenReaderFocusable="true">
+
+                <TextView
+                    android:id="@+id/contactGroup2"
+                    style="@style/changetext"
+                    android:background="@color/color2"
+                    android:contentDescription="Contacts for Group 2"
+                    android:labelFor="@id/deleteContact2"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_contact_group"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteContact2"
+                    style="@style/delete"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/contactHolder3"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color3"
+                android:screenReaderFocusable="true">
+
+                <TextView
+                    android:id="@+id/contactGroup3"
+                    style="@style/changetext"
+                    android:background="@color/color3"
+                    android:contentDescription="Contacts for Group 3"
+                    android:labelFor="@id/deleteContact3"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_contact_group"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteContact3"
+                    style="@style/delete"
+                    app:tint="@android:color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/contactHolder4"
+                style="@style/changeholder"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/color4"
+                android:screenReaderFocusable="true">
+
+                <TextView
+                    android:id="@+id/contactGroup4"
+                    style="@style/changetext"
+                    android:background="@color/color4"
+                    android:contentDescription="Contacts for Group 4"
+                    android:inputType="text"
+                    android:labelFor="@id/deleteContact4"
+                    android:minHeight="@dimen/button_size"
+                    android:text="@string/blank_contact_group"
+                    android:textAlignment="center"
+                    android:textColor="@color/base_color"
+                    android:textSize="@dimen/font_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/deleteContact4"
+                    style="@style/delete"
+                    app:tint="@color/black" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/setNewContactGroup"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:hint="@string/enter_new_contact_group"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:minHeight="@dimen/button_size"
+                android:textColor="@color/base_color"
+                android:textColorHint="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <Button
+                android:id="@+id/saveNewContactGroup"
+                style="@style/button"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/settings"
+                android:minHeight="@dimen/button_size"
+                android:text="@string/save_new_contact_group"
+                android:textColor="@color/base_color"
+                android:textSize="@dimen/font_size" />
+
+            <include layout="@layout/navbar" />
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

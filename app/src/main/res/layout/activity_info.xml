@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--You don't have to change anything here-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/titleMargin"
+    android:paddingRight="@dimen/padding"
+    android:paddingLeft="@dimen/padding"
+    android:orientation="vertical"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/aboutLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/about_text"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/font_size" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:linksClickable="true"
+        android:minHeight="@dimen/button_size"
+        android:text="@string/link_to_github"
+        android:textColorLink="@color/link"
+        android:textSize="@dimen/title_font"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/buttonToLicense"
+        style="@style/button"
+        android:minHeight="@dimen/button_size"
+        android:text="@string/view_license"
+        android:textColor="@color/base_color"
+        android:textSize="@dimen/font_size" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30">
+            </Space>
+
+    <include layout="@layout/navbar" />
+</LinearLayout>
